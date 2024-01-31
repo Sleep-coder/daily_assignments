@@ -1,0 +1,30 @@
+.line1 {
+  font-weight: bold;
+}
+
+.line2 {
+  font-weight: italic;
+}
+
+#heading1 {
+  color: red;
+  font-size: 24px;
+  background: red;
+}
+
+.heading2 {
+  color: blue;
+}
+
+#para {
+  background-color: yellow;
+  padding: 10px;
+}
+
+.container {
+  border: 1px solid black;
+}
+
+#bgcolor {
+  background: red;
+}
