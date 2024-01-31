@@ -16,7 +16,7 @@
   color: blue;
 }
 
-#para {
+#para1 {
   background-color: yellow;
   padding: 10px;
 }
@@ -27,4 +27,8 @@
 
 #bgcolor {
   background: red;
+}
+
+#para2 {
+  text-align: center;
 }
