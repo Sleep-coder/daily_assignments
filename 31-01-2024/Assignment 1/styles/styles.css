@@ -15,8 +15,7 @@
   background-color: aquamarine;
   border: 2px solid blueviolet;
   border-radius: 10px;
-
-  margin: 20px;
+  width: 50%;
 }
 
 .headings {
@@ -33,4 +32,11 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: indianred;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
 }
