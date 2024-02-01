@@ -1,0 +1,52 @@
+body {
+  background-color: aqua;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.div1 {
+  display: flex;
+  background-color: white;
+  width: 14%;
+  height: 687px;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.center {
+  display: flex;
+  gap: 30px;
+}
+
+.div2 {
+  display: flex;
+  background-color: white;
+  width: 245px;
+  height: 245px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 240px;
+}
+
+.div3 {
+  display: flex;
+  background-color: white;
+  width: 245px;
+  height: 245px;
+  justify-content: center;
+  align-items: center;
+}
+
+.div4 {
+  display: flex;
+  background-color: white;
+  width: 245px;
+  height: 245px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 481px;
+}

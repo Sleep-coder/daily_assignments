@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1518px;
+  gap: 5px;
+}
+
+#header {
+  background-color: aqua;
+}
+#footer {
+  background-color: darkorange;
+}
+
+.hf {
+  display: flex;
+  gap: 5px;
+  width: 33%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  display: flex;
+  background-color: thistle;
+
+  height: 190px;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  align-items: center;
+  height: 320px;
+}
+
+#side-bar {
+  display: flex;
+  background-color: yellowgreen;
+
+  height: 250px;
+  justify-content: center;
+}
+
+#extra-content {
+  display: flex;
+  background-color: black;
+
+  justify-content: center;
+  height: 140px;
+}
+
+#related-images {
+  display: flex;
+  background-color: darkgreen;
+  justify-content: center;
+
+  height: 90px;
+  width: 70%;
+}
+
+#related-posts {
+  display: flex;
+  background-color: lightpink;
+  width: 33%;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  gap: 5px;
+}
+
+.center1 {
+  display: flex;
+  gap: 5px;
+}
+
+.side1 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 40%;
+}
+
+.side2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 60%;
+}
+
+.center2 {
+  display: flex;
+  gap: 5px;
+}
+
+p {
+  text-align: center;
+}
