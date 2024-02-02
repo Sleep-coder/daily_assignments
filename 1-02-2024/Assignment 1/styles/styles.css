@@ -12,7 +12,7 @@ body {
   display: flex;
   background-color: white;
   width: 14%;
-  height: 687px;
+  height: 702px;
   justify-content: center;
   padding-top: 40px;
 }
@@ -20,6 +20,7 @@ body {
 .center {
   display: flex;
   gap: 30px;
+  height: 100vh;
 }
 
 .div2 {
@@ -29,7 +30,7 @@ body {
   height: 245px;
   justify-content: center;
   align-items: center;
-  margin-top: 240px;
+  align-self: center;
 }
 
 .div3 {
@@ -48,5 +49,5 @@ body {
   height: 245px;
   justify-content: center;
   align-items: center;
-  margin-top: 481px;
+  align-self: flex-end;
 }
