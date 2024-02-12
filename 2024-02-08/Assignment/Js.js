@@ -32,9 +32,7 @@ console.log(JSON.stringify(libArray, null, 2));
 
 borrowBook(1);
 borrowBook(2);
-
 borrowBook(2);
-
 borrowBook(4);
 
 console.log(JSON.stringify(libArray, null, 2));
