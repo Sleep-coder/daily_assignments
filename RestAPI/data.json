@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "first_name": "Annamaria",
+    "last_name": "Phidgin",
+    "email": "aphidgin0@twitpic.com",
+    "gender": "Female"
+  },
+  {
+    "id": 2,
+    "first_name": "Colet",
+    "last_name": "Crolly",
+    "email": "ccrolly1@amazon.co.jp",
+    "gender": "Male"
+  },
+  {
+    "id": 3,
+    "first_name": "Harrison",
+    "last_name": "Burchall",
+    "email": "hburchall2@cdbaby.com",
+    "gender": "Polygender"
+  },
+  {
+    "id": 4,
+    "first_name": "Mellicent",
+    "last_name": "Lanston",
+    "email": "mlanston3@independent.co.uk",
+    "gender": "Bigender"
+  }
+]
