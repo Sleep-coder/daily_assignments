@@ -13,11 +13,6 @@ const port = 3000;
 
 app.use(express.json());
 
-app.use((err, req, res, next) => {
-  console.error("Error:", err);
-  res.status(err.statusCode || 500).send("Internal Server Error");
-});
-
 // Get data
 
 app.get("/data", async (req, res) => {
@@ -37,7 +32,7 @@ app.get("/data/:id", async (req, res) => {
     if (data) {
       res.json(data);
     } else {
-      res.status(404).send("Record not found"); 
+      res.status(404).send("Record not found");
     }
   } catch (error) {
     res.status(500).send("Error fetching data by ID");
