@@ -37,7 +37,7 @@ app.get("/data/:id", async (req, res) => {
     if (data) {
       res.json(data);
     } else {
-      res.status(404).send("Record not found"); // Add a proper error message
+      res.status(404).send("Record not found"); 
     }
   } catch (error) {
     res.status(500).send("Error fetching data by ID");
