@@ -5,24 +5,24 @@ const {
   writeToFile,
 } = require("./fileSystemModule");
 
-let directoryPath = "2024-02-20";
-let newDirectoryName = "2024-02-20/newDirectory";
-let filePath = "2024-02-20/newDirectory/read.txt";
+let directoryPath = "./";
+let newDirectoryName = "newDirectory";
+let filePath = "newDirectory/read.txt";
 let newContent = "HI, My name is AARUSH";
 
 // List files
 listFiles(directoryPath)
-  .then(() => {
+  .then(async () => {
     // Create directory
-    return createDirectory(newDirectoryName);
+    return await createDirectory(newDirectoryName);
   })
-  .then(() => {
+  .then(async () => {
     // Read file content
-    return readFileContent(filePath);
+    return await writeToFile(filePath, newContent);
   })
-  .then(() => {
+  .then(async () => {
     // Write to file
-    return writeToFile(filePath, newContent);
+    return await readFileContent(filePath);
   })
   .then(() => {
     console.log("File updated successfully!");
