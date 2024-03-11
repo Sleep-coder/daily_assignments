@@ -1,0 +1,126 @@
+/* App.css (or index.css) */
+
+/* Header styles */
+.header {
+  background-color: #353535;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+/* MainContent styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* FeaturedDishes styles */
+h2.featured-dishes {
+  color: #ff7f50;
+}
+/* FeaturedDishes.css */
+.featured-dishes {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  color: #ff7f50;
+  text-align: center;
+}
+
+.dish {
+  display: flex;
+  margin-top: 20px;
+}
+
+.dish img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.dish-info {
+  flex: 1;
+}
+
+.dish-info h3 {
+  margin-bottom: 10px;
+  color: #353535;
+}
+
+/* Promotions styles */
+h2.promotions {
+  color: #87ceeb;
+}
+/* Promotions.css */
+.promotions {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  color: #87ceeb;
+  text-align: center;
+}
+
+.promotion {
+  display: flex;
+  margin-top: 20px;
+}
+
+.promotion img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.promotion-info {
+  flex: 1;
+}
+
+.promotion-info h3 {
+  margin-bottom: 10px;
+  color: #353535;
+}
+
+/* ContactInfo styles */
+h2.contact-info {
+  color: #32cd32;
+}
+/* ContactInfo.css */
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  color: #32cd32;
+  text-align: center;
+}
+
+.info-item {
+  margin-top: 20px;
+}
+
+.info-item h3 {
+  color: #353535;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
