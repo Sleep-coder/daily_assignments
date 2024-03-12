@@ -1,0 +1,10 @@
+/* MainContent.css */
+.main-content {
+  padding: 10px;
+}
+
+.item-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
