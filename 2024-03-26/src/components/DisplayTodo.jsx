@@ -20,10 +20,20 @@ const DisplayTodo = () => {
   return (
     <div>
       {todos.map((todo) => (
-        <div key={todo.id}>
-          {todo.text}
-          <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
-          <button onClick={() => handleUpdateTodo(todo.id)}>Update</button>
+        <div className="todo-item" key={todo.id}>
+          <div className="todo-text">{todo.text}</div>
+          <div className="button-container">
+            <button
+              className="delete-button"
+              onClick={() => handleDeleteTodo(todo.id)}>
+              Delete
+            </button>
+            <button
+              className="update-button"
+              onClick={() => handleUpdateTodo(todo.id)}>
+              Update
+            </button>
+          </div>
         </div>
       ))}
     </div>

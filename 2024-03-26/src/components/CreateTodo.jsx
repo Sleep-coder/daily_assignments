@@ -12,14 +12,17 @@ const CreateTodo = () => {
   };
 
   return (
-    <div>
+    <div className="input-container">
       <input
+        className="todo-input"
         type="text"
         placeholder="Enter todo"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
       />
-      <button onClick={handleAddTodo}>Add</button>
+      <button className="add-button" onClick={handleAddTodo}>
+        Add
+      </button>
     </div>
   );
 };
