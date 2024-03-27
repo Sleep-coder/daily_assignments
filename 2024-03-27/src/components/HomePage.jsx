@@ -1,0 +1,38 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../actions/cartActions";
+
+const products = [
+  { id: 1, name: "Product A", price: 10, image: "product-a.jpg" },
+  { id: 2, name: "Product B", price: 15, image: "product-b.jpg" },
+  // Add more products here
+];
+
+const HomePage = () => {
+  const dispatch = useDispatch();
+
+  const handleAddToCart = (product) => {
+    console.log("Adding to cart:", product);
+    dispatch(addToCart(product));
+  };
+
+  return (
+    <div className="home-page">
+      <h1>Products</h1>
+      {products.map((product) => (
+        <div key={product.id} className="product">
+          <img src={product.image} alt={product.name} />
+          <p>{product.name}</p>
+          <p>${product.price}</p>
+          <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+        </div>
+      ))}
+      <Link to="/cart">
+        <button>Go to Cart</button>
+      </Link>
+    </div>
+  );
+};
+
+export default HomePage;

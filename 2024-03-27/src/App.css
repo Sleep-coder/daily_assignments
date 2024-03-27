@@ -1,0 +1,12 @@
+/* styles.css */
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cart-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+}
