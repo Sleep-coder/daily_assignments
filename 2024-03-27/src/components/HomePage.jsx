@@ -1,3 +1,4 @@
+// HomePage.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -19,17 +20,25 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
-      <h1>Products</h1>
+      <h1 className="page-title">Products</h1>
       {products.map((product) => (
         <div key={product.id} className="product">
-          <img src={product.image} alt={product.name} />
-          <p>{product.name}</p>
-          <p>${product.price}</p>
-          <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+          <img
+            src={product.image}
+            alt={product.name}
+            className="product-image"
+          />
+          <p className="product-name">{product.name}</p>
+          <p className="product-price">${product.price}</p>
+          <button
+            className="add-to-cart-btn"
+            onClick={() => handleAddToCart(product)}>
+            Add to Cart
+          </button>
         </div>
       ))}
       <Link to="/cart">
-        <button>Go to Cart</button>
+        <button className="go-to-cart-btn">Go to Cart</button>
       </Link>
     </div>
   );

@@ -1,3 +1,4 @@
+// CartPage.jsx
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -25,18 +26,28 @@ const CartPage = () => {
 
   return (
     <div className="cart-page">
-      <h1>Cart</h1>
+      <h1 className="page-title">Cart</h1>
       {cartItems.map((item) => (
         <div key={item.id} className="cart-item">
-          <p>{item.name}</p>
-          <p>Quantity: {item.quantity}</p>
-          <p>Total Price: ${item.totalPrice}</p>
-          <button onClick={() => handleIncrease(item.id)}>+</button>
-          <button onClick={() => handleDecrease(item.id)}>-</button>
-          <button onClick={() => handleRemove(item.id)}>Remove</button>
+          <p className="item-name">{item.name}</p>
+          <p className="item-quantity">Quantity: {item.quantity}</p>
+          <p className="item-total-price">Total Price: ${item.totalPrice}</p>
+          <button
+            className="action-btn"
+            onClick={() => handleIncrease(item.id)}>
+            +
+          </button>
+          <button
+            className="action-btn"
+            onClick={() => handleDecrease(item.id)}>
+            -
+          </button>
+          <button className="action-btn" onClick={() => handleRemove(item.id)}>
+            Remove
+          </button>
         </div>
       ))}
-      <p>Total: ${totalPrice}</p>
+      <p className="total-price">Total: ${totalPrice}</p>
     </div>
   );
 };
