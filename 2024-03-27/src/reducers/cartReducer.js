@@ -1,5 +1,3 @@
-// src/reducers/cartReducer.js
-
 const initialState = {
   cartItems: [],
   totalPrice: 0,
@@ -7,6 +5,33 @@ const initialState = {
 
 const cartReducer = (state = initialState, action) => {
   switch (action.type) {
+    case "ADD_TO_CART":
+      console.log("Adding to cart:", action.payload); // Verify payload in reducer
+      const existingItemIndex = state.cartItems.findIndex(
+        (item) => item.id === action.payload.id
+      );
+      if (existingItemIndex !== -1) {
+        const updatedCartItems = [...state.cartItems];
+        updatedCartItems[existingItemIndex].quantity += 1;
+        updatedCartItems[existingItemIndex].totalPrice += action.payload.price;
+        return {
+          ...state,
+          cartItems: updatedCartItems,
+          totalPrice: state.totalPrice + action.payload.price,
+        };
+      } else {
+        const newItem = {
+          ...action.payload,
+          quantity: 1,
+          totalPrice: action.payload.price,
+        };
+        return {
+          ...state,
+          cartItems: [...state.cartItems, newItem],
+          totalPrice: state.totalPrice + newItem.price,
+        };
+      }
+
     case "INCREASE_QUANTITY":
       // Update quantity and total price for the item with matching ID
       return {
@@ -51,6 +76,7 @@ const cartReducer = (state = initialState, action) => {
         cartItems: state.cartItems.filter((item) => item.id !== action.payload),
         totalPrice: state.totalPrice - removedItem.quantity * removedItem.price,
       };
+
     default:
       return state;
   }
