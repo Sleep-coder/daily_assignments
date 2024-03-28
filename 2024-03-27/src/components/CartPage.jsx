@@ -17,7 +17,14 @@ const CartPage = () => {
   };
 
   const handleDecrease = (productId) => {
-    dispatch(decreaseQuantity(productId));
+    const item = cartItems.find((item) => item.id === productId);
+    if (item.quantity > 1) {
+      // Check if quantity is greater than 1
+      dispatch(decreaseQuantity(productId));
+    } else {
+      // If quantity is already 1, remove the item from the cart
+      dispatch(removeFromCart(productId));
+    }
   };
 
   const handleRemove = (productId) => {
