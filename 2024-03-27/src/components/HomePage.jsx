@@ -5,8 +5,18 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../actions/cartActions";
 
 const products = [
-  { id: 1, name: "Product A", price: 10, image: "product-a.jpg" },
-  { id: 2, name: "Product B", price: 15, image: "product-b.jpg" },
+  {
+    id: 1,
+    name: "Product A",
+    price: 10,
+    image: "haryo-setyadi-acn5ERAeSb4-unsplash.jpg",
+  },
+  {
+    id: 2,
+    name: "Product B",
+    price: 15,
+    image: "md-salman-tWOz2_EK5EQ-unsplash.jpg",
+  },
   // Add more products here
 ];
 
@@ -29,6 +39,7 @@ const HomePage = () => {
             className="product-image"
           />
           <p className="product-name">{product.name}</p>
+
           <p className="product-price">${product.price}</p>
           <button
             className="add-to-cart-btn"
